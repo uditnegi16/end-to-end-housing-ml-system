@@ -1,0 +1,8 @@
+{
+    "model_name": "RandomForestRegressor",
+    "model_version": "v1.0",
+    "target": "median_house_value",
+    "metric": "RMSE",
+    "test_rmse": 49933,
+    "training_date": "2026-06-12"
+}

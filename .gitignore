@@ -1,13 +1,16 @@
 venv/
 __pycache__/
+*.pyc
+
+.env
+.env.*
+
 .ipynb_checkpoints/
 
-data/
-models/
+logs/*.log
 
-*.pkl
-*.joblib
-*.csv
+notebooks/models/
+notebooks/reports/
 
 .DS_Store
-.env
+Thumbs.db

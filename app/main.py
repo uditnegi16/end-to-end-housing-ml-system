@@ -4,6 +4,7 @@ from src.predict import predict_price
 from src.investment_decision import make_investment_decision
 from src.monitor import log_prediction
 import time 
+import json 
 app=FastAPI(title="end-to-end hosuing ml system")
 
 @app.get("/")
@@ -29,3 +30,8 @@ def predict(data: HousingRequest):
         **decision,
         "latency_ms": latency_ms
     }
+@app.get("/model_info")
+def model_info():
+    with open("models/metadata.json","r") as f:
+        metadata=json.load(f)
+    return metadata
