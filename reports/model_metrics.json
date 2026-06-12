@@ -1,0 +1,6 @@
+{
+    "linear_regression_rmse": 68232,
+    "decision_tree_cv_rmse": 68730,
+    "random_forest_cv_rmse": 48901,
+    "final_test_rmse": 49933
+}
